@@ -35,7 +35,7 @@ Ao receber a planilha você monta dois arquivos texto, um com as variaveis e out
 
 OBS.: No arquivo de comandos o $N representa a posição da coluna no arquivo de variáveis, a contar a partir do 0.
 
-Como saída teremos:
+Como saída teremos um arquivo para cada linha do arquivo de variáveis:
 
 |                                 ARQUIVO DE SAIDA PARA LINHA 0                                |
 |----------------------------------------------------------------------------------------------|
