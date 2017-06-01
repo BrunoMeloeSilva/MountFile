@@ -23,6 +23,8 @@ Ao receber a planilha você monta dois arquivos texto, um com as variaveis e out
 |       .                     |
 |       .                     |
 
+Os elementos na linha devem ser separado por ponto e vírgula ( ; ), pois essa é uma determinação do algoritmo.
+
 |                       ARQUIVO DE COMANDOS                              |
 |------------------------------------------------------------------------|
 | UPDATE TMOVRATCCULOGFAT SET CODCCUSTO='$1' WHERE CODCCUSTO='$0';       |
