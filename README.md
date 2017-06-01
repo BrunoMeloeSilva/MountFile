@@ -13,7 +13,7 @@ Você recebeu do usuário uma planilha com os de-para dos códigos do cadastro d
 |        .      |        .      |
 
 
-Ao receber a planilha você monta dois arquivos texto, um com as variaveis e outro com os comandos, os elementos na linha devem ser separado por ponto e vírgula, pois essa é uma determinação do algoritmo, pois é assim que separamos os elementos, cada um em sua "coluna",  veja:
+Ao receber a planilha você monta dois arquivos texto, um com as variaveis e outro com os comandos, os elementos no arquivo de variáveis devem ser separado por ponto e vírgula, pois essa é uma determinação do algoritmo, pois é assim que separamos os elementos, cada um em sua "coluna",  veja:
 
 |     ARQUIVO DE VARIAVEIS    |
 |-----------------------------|
