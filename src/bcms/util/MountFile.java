@@ -8,18 +8,18 @@ import java.util.ArrayList;
 public class MountFile {
 
 	public static void main(String[] args) throws IOException {
-		BufferedReader fileVarTxt = new BufferedReader(new FileReader("Variaveis3.txt"));
+		BufferedReader tuple = new BufferedReader(new FileReader("Variaveis.txt"));
 
 		String line = null;
 		int posSemicolon = 0;
 		String[] vars = new String[2];
 		ArrayList<String> cmdsSql = new ArrayList<>();
-		while ((line = fileVarTxt.readLine()) != null) {
+		while ((line = tuple.readLine()) != null) {
 			posSemicolon = line.indexOf(';');
 			vars[0] = line.substring(0, posSemicolon);
 			vars[1] = line.substring(posSemicolon + 1, line.length());
 			cmdsSql.add("\n--$0 = " + vars[0] + " $1 = " + vars[1]);
-			BufferedReader fileCmdTxt = new BufferedReader(new FileReader("Comandos3.txt"));
+			BufferedReader fileCmdTxt = new BufferedReader(new FileReader("Comandos.txt"));
 			int tag = 0;
 			while ((line = fileCmdTxt.readLine()) != null) {
 				String cmd = "";
@@ -40,7 +40,7 @@ public class MountFile {
 		for (String string : cmdsSql) {
 			System.out.println(string);
 		}
-		fileVarTxt.close();
+		tuple.close();
 	}
 }
 /* Limitações: 
