@@ -21,6 +21,7 @@ public class MountText {
 			}
 			posSemicolon = 0;
 		}
+		System.out.println("--> " + numberOfColumns+" colunas identificadas, proceso de escrita iniciado..\n");
 		String[] valores = new String[numberOfColumns];
 		// Fim
 		while ((line = tuple.readLine()) != null) {
@@ -48,7 +49,7 @@ public class MountText {
 	}
 
 	public static void main(String[] args) throws IOException {
-		mountText("Variaveis.txt", ';', "Comandos.txt");
+		mountText("Variaveis.txt", '	', "Comandos.txt");
 	}
 }
 /*
